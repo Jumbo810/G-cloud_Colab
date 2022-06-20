@@ -3,11 +3,10 @@
 apt-get update
 rm -rf Windows10 Windows10.img Windows10.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O Windows10.gz https://vagrantcloud-files-production.s3-accelerate.amazonaws.com/archivist/boxes/0f51927e-38b9-4397-b686-e6efbccec2dc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA6NDPRW4BU4QXRYOH%2F20220620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220620T113630Z&X-Amz-Expires=900&X-Amz-Security-Token=FwoGZXIvYXdzECUaDCfAxSZ2NJNmG0vERyK3AezAswd3Cm6JyatXBa85NYDJjStdttZcByh1iJyR4ptnNsUG89oXHlHCYpZ8cmp12uSnU94BvXGPl6ZfOWwQBzVSJUoH8ZYUnW%2F9AE3nYJ7dqwFmUSPe11AIgnWC4rkpKpZnwEYke%2FpbS3vIt14z8t0%2FTORqkZGCllXaBuN%2BF%2B05w0OT6My%2FqnGzghywdW91AIVzk7YW9Elp5e1KJ82D00%2Fsxh0zvcc%2BdnTeAnq1Wys56AXZ%2Bp5PyyiNtMGVBjItA35iZi91ynIc9f0K%2BuIrVPvPNc6wnYH8OQw6BpSztLLMSCz81WA74DeoYNrC&X-Amz-SignedHeaders=host&X-Amz-Signature=8b690283e7e588bcb02a353bfb7243d3b3c85ca8b75adb75b876ef1e449ade04
-gunzip Windows10.gz
+wget -O Windows10.box https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.5/providers/qemu.box
 echo "Wait..."
 echo "I m Working Now.."
-mv Windows10 Windows10.img
+mv Windows10.box Windows10.img
 wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
