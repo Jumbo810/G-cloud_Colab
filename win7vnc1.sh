@@ -10,7 +10,7 @@ sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
 clear
 echo Downloading Windows files from aank.me
 rm -rf win7 win7.img
-curl -L -o win7.box https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.7/providers/qemu.box
+curl -L -o win7.box https://app.vagrantup.com/thuonghai2711/boxes/AndroidQCOW2/versions/1.0.0/providers/qemu.box
 echo "Wait.."
 mv win7.box win7.img
 echo "Windows 7 x86 Lite On Gitpod, GCloud and GColab"
@@ -39,5 +39,5 @@ printf """$c$b
     $r  Support YT Channel-> Aank is ME © 2022 $c https://aank.me/Youtube 
           
 $endc$enda""";
-sudo qemu-system-x86_64 -vnc :0 -hda win7.img  -smp cores=2  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1
+sudo qemu-system-x86_64 -vnc :0 -hda win7.img  -smp cores=2  -m 3000M -machine usb=on -device usb-tablet > /dev/null 2>&1
 sleep 43200
