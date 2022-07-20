@@ -10,7 +10,7 @@ sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
 clear
 echo Downloading Windows files from aank.me
 rm -rf win7 win7.img
-curl -L -o win7.box https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.7/providers/qemu.box
+curl -L -o win7.box https://onboardcloud.dl.sourceforge.net/project/osboxes/v/vb/1-A-d/Lineage-OS-CynagenMod/14.1/R5/64bit.7z
 echo "Wait.."
 mv win7.box win7.img
 echo "Windows 7 x86 Lite On Gitpod, GCloud and GColab"
