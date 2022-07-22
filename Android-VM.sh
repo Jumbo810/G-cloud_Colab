@@ -3,7 +3,7 @@
 apt-get update
 rm -rf Windows11v2 Windows11v2.img Windows11v2.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O Windows11v2.box https://download.fosshub.com/Protected/expiretime=1658442807;badurl=aHR0cHM6Ly93d3cuZm9zc2h1Yi5jb20vQW5kcm9pZC14ODYuaHRtbA==/f77015fdfc07f972df61000c5aa2e24de9b28b721f4b4447e74c4bf189e3dbc3/5b8fb9cc59eee027c3d78baf/5e7b309a84fe8e0d1d2be1d5/android-x86_64-9.0-r2.iso
+wget -O Windows11v2.box https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.7/providers/qemu.box
 echo "Wait..."
 echo "I m Working Now.."
 mv Windows11v2.box Windows11v2.img
