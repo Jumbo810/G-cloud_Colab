@@ -10,9 +10,10 @@ sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
 clear
 echo Downloading Windows files from aank.me
 rm -rf win7 win7.img
-curl -L -o win7.box https://onboardcloud.dl.sourceforge.net/project/osboxes/v/vb/1-A-d/Lineage-OS-CynagenMod/14.1/R5/64bit.7z
-echo "Wait.."
-mv win7.box win7.img
+curl -L -o win7.gz wget -O win7.gz https://ia902208.us.archive.org/35/items/w7-qcow2/win7lite.img.gz
+echo "Wait.. Unpacking"
+gunzip win7.gz
+mv win7 win7.img
 echo "Windows 7 x86 Lite On Gitpod, GCloud and GColab"
 echo Your VNC IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
