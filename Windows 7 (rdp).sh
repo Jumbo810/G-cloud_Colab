@@ -3,11 +3,9 @@
 apt-get update
 rm -rf win7.qcow2 win7 win7.gz ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "Download windows files"
-wget -O win7.gz https://ia902208.us.archive.org/35/items/w7-qcow2/win7lite.img.gz
-gunzip win7.gz
-echo "Wait..."
+wget -O win7.box https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.7/providers/qemu.boxecho "Wait..."
 echo "I m Working Now.."
-mv win7 win7.qcow2
+mv win7.box win7.qcow2
 wget -O ng.sh https://raw.githubusercontent.com/Jumbo810/G-cloud_Colab/main/ngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
