@@ -1,8 +1,8 @@
 #!/bin/sh
 # Free RDP GoormIDE
-sudo adduser aank --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
-echo "aank:LinggaHosting" | sudo chpasswd
-sudo usermod -aG sudo,adm aank
+sudo adduser jumbo --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+echo "jumbo:root" | sudo chpasswd
+sudo usermod -aG sudo,adm jumbo
 sudo apt install screen
 sudo apt update
 clear
@@ -25,8 +25,8 @@ clear
 echo "=======================100%"
 echo "===================================="
 echo "RDP IP Address :" && curl --silent --show-error ipconfig.io
-echo "Username : aank"
-echo "Password : LinggaHosting"
+echo "Username : jumbo"
+echo "Password : root"
 echo Go to settings add port 3389
 echo "===================================="
 b='\033[1m'
